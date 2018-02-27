@@ -25,7 +25,7 @@ $(obj):%.o:%.c
 
 
 #test_main程序
-$(server): http_server.o cJSON.o
+$(server): http_server.o cJSON.o login.o reg.o
 	$(CC) $^ -o $@ $(LIBS)
 
 
